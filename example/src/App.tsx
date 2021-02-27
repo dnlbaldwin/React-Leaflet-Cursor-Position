@@ -1,13 +1,10 @@
-import CursorPosition from "react-leaflet-cursor-position";
+import { LayersControl, MapContainer, TileLayer, ZoomControl } from 'react-leaflet';
+import CursorPosition from 'react-leaflet-cursor-position';
+// Ignore missing type definitions
+// @ts-ignore
+import { MgrsGraticule } from 'react-leaflet-mgrs-graticule';
 
-import {
-  LayersControl,
-  MapContainer,
-  TileLayer,
-  ZoomControl,
-} from "react-leaflet";
-
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
@@ -44,6 +41,7 @@ function App() {
         </LayersControl.BaseLayer>
       </LayersControl>
       <CursorPosition />
+      <MgrsGraticule />
     </MapContainer>
   );
 }
