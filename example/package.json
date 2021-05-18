@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "react": "^17.0.1",
+    "react-div-100vh": "^0.5.6",
     "react-dom": "^17.0.1",
     "react-leaflet": "^3.1.0",
     "react-leaflet-cursor-position": "file:..",
-    "react-leaflet-mgrs-graticule": "file:../../react-leaflet-mgrs-graticule",
+    "react-leaflet-gars-graticule": "0.0.8",
+    "react-leaflet-mgrs-graticule": "^0.2.1",
     "react-scripts": "4.0.2",
     "typescript": "^4.1.2"
   },
