@@ -8,6 +8,7 @@
     "example": "example"
   },
   "dependencies": {
+    "gars-utils": "0.0.1",
     "mgrs": "^1.0.0"
   },
   "peerDependencies": {
@@ -24,7 +25,6 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
