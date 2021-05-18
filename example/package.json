@@ -10,14 +10,15 @@
     "react-leaflet-cursor-position": "file:..",
     "react-leaflet-gars-graticule": "0.0.8",
     "react-leaflet-mgrs-graticule": "^0.2.1",
-    "react-scripts": "4.0.2",
     "typescript": "^4.1.2"
   },
+  "homepage": "https://dnlbaldwin.github.io/React-Leaflet-Cursor-Position/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "react-scripts": "^4.0.2"
+  }
 }
