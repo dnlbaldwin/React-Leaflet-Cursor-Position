@@ -1,15 +1,17 @@
 import { CSSProperties } from 'react';
-import { LayersControl, LayerGroup, MapContainer, TileLayer, ZoomControl } from 'react-leaflet';
+import { LayersControl, LayerGroup, MapContainer, TileLayer } from 'react-leaflet';
 import CursorPosition from 'react-leaflet-cursor-position';
 // Ignore missing type definitions
 // @ts-ignore
 import { MgrsGraticule } from 'react-leaflet-mgrs-graticule';
 import { GarsGraticule } from 'react-leaflet-gars-graticule';
+import LatLngGraticule from 'react-leaflet-lat-lng-graticule';
 
 import './App.css';
 
 const mgrsGraticuleName = 'MGRS';
 const garsGraticuleName = 'GARS';
+const latLngGraticuleName = 'LAT/LNG';
 const overlayEnabled = true;
 
 const uiStyle: CSSProperties = {
@@ -68,6 +70,11 @@ function App() {
         <LayersControl.Overlay name={garsGraticuleName}>
           <LayerGroup>
             <GarsGraticule name={garsGraticuleName} checked={!overlayEnabled} />
+          </LayerGroup>
+        </LayersControl.Overlay>
+        <LayersControl.Overlay name={latLngGraticuleName}>
+          <LayerGroup>
+            <LatLngGraticule name={latLngGraticuleName} checked={!overlayEnabled} />
           </LayerGroup>
         </LayersControl.Overlay>
       </LayersControl>
