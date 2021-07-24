@@ -18,6 +18,7 @@ This package uses react-leaflet-v3. It is not tested with react-leaflet-v2
 ```js
 const mgrsGraticuleName = 'MGRS';
 const garsGraticuleName = 'GARS';
+const latLngGraticuleName = 'LAT/LNG';
 const overlayEnabled = true;
 
 const uiStyle: CSSProperties = {
@@ -78,7 +79,16 @@ function App() {
             <GarsGraticule name={garsGraticuleName} checked={!overlayEnabled} />
           </LayerGroup>
         </LayersControl.Overlay>
+        <LayersControl.Overlay name={latLngGraticuleName}>
+          <LayerGroup>
+            <LatLngGraticule name={latLngGraticuleName} checked={!overlayEnabled} />
+          </LayerGroup>
+        </LayersControl.Overlay>
       </LayersControl>
       <CursorPosition position={'leaflet-top lsft'} style={uiStyle} />
     </MapContainer>
+  );
+}
+
+export default App;
 ```
